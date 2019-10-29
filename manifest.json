@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "BigBook",
+  "version": "0.01",
+
+  "description": "Add full screen capability to open library books.",
+
+  "applications": {
+    "gecko": {
+      "id": "big_book@arthuredelstein.net"
+    }
+  },
+
+  "icons": {
+    "48": "big-book-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.archive.org/*"],
+      "js": ["content-script.js"]
+    }
+  ]
+
+}
