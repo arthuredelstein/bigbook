@@ -1,8 +1,11 @@
 document.addEventListener("keypress", event => {
-  console.log("hello Julian and Alec");
+  console.log("Hello, Julian and Alec!");
   if (event.key === "f") {
     if (document.fullscreenElement === null) {
-      document.body.requestFullscreen();
+      let brContainer = document.querySelector(".BRcontainer");
+      if (brContainer) {
+        brContainer.requestFullscreen();
+      }
     } else {
       document.exitFullscreen();
     }
