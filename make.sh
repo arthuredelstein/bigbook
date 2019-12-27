@@ -1,2 +1,3 @@
 #!/bin/bash
-zip -r -FS bigbook.xpi src/*
+cd src
+zip -r -FS ../bigbook.xpi *
